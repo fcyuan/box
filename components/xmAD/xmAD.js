@@ -1,0 +1,1 @@
+Component({properties:{adData:Object},attached:function(){this.setData({adID:this.dataset.id})},methods:{clickAd(){this.triggerEvent('click')},close(){this.triggerEvent('close')}}});

@@ -1,0 +1,44 @@
+<!-- <view class='ad'>
+ <navigator target = "miniProgram" app-id="{{bgid}}" path="" open-type='navigate'>
+  <image wx:if="{{rec[1].qr}}" src='{{bg}}' class='ad_img' mode='aspectFill' data-url="{{item.qr}}" catchtap="qrclick"></image>
+  <image wx:if="{{rec[1].qr==null}}" src='{{bg}}' class='ad_img' mode='aspectFill' ></image>
+   </navigator>
+</view> -->
+
+<view class="swiper-tab">
+  <block wx:for="{{categories}}" wx:key="xxx">
+    <view class="swiper-tab-list  {{currentTab==index ? 'on' : ''}}" data-current="{{index}}" bindtap="swichNav">{{item.category}}</view>
+  </block>
+</view>
+
+<swiper current="{{currentTab}}" class="swiper-box" duration="300" bindchange="bindChange">
+  <swiper-item wx:for="{{categories}}" wx:key="xxx">
+    <view class='tuijian'>
+      <!--列表内容-->
+      <block wx:for="{{item.list}}" wx:key="xxx">
+      
+        <view class='tuijian_lis'>
+          <navigator target="miniProgram" app-id="{{item.wxid}}" path="{{item.path}}" open-type='navigate'>
+            <view wx:if="{{item.qr}}" data-url="{{item.qr}}" catchtap="qrclick" class='bao'  data-wxid="{{item.wxid}}" data-curl='{{item.curl}}' data-twxid='{{item.twxid}}'  data-name='{{item.name}}'>
+              <image src='{{item.img}}' class='tuijian_icon'></image>
+              <text class='tuijian_name'>{{item.name}}</text>
+              <text class='tuijian_txt'>{{item.desc}}</text>
+              <text class='tuijian_num'><text class='tuijian_num_num'>{{item.n|Int}}万</text>人玩</text>    
+              <button class='tuijian_btn'>进入</button>
+            </view>
+            <view wx:if="{{item.qr==null ||item.qr==''}}" class='bao'  data-wxid="{{item.wxid}}" data-curl='{{item.curl}}' data-twxid='{{item.twxid}}'  data-name='{{item.name}}' bindtap='yx_1'>
+              <image src='{{item.img}}' class='tuijian_icon'></image>
+              <text class='tuijian_name'>{{item.name}}</text>
+              <text class='tuijian_txt'>{{item.desc}}</text>
+              <text class='tuijian_num'><text class='tuijian_num_num'>{{item.n|Int}}万</text>人玩</text>
+              <button class='tuijian_btn'>进入</button>
+            </view>
+           </navigator>
+        </view>
+       
+      </block>
+    </view>
+  </swiper-item>
+
+
+</swiper>

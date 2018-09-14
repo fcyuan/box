@@ -1,0 +1,16 @@
+<view class='yzy_box'>
+<view class='yzy_small'>
+<navigator target="miniProgram" app-id="{{wxid_wx}}" path="{{path_wx}}" open-type='navigate'>
+    <view class='yzy_img'>
+    <image src='{{img_wx}}' class='imgs'></image>
+    </view>
+    <view class='yzy_name'>{{name_wx}}</view>
+    <view class='yzy_desc'>{{desc_wx}}</view>
+    <view class='btn'>进入游戏</view>
+    </navigator>
+</view>
+ 
+ <view class='fh_btn' bindtap='fh_btn'>返回首页</view>
+ 
+
+</view>

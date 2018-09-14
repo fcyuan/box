@@ -1,0 +1,27 @@
+<view class='wode_box'>
+<image src='/image/wodebg.jpg' class='wode_bg'></image>
+<view class='tx'>
+<open-data type="userAvatarUrl"></open-data>
+</view>
+<open-data type="userNickName" class="wode_name" ></open-data>
+<!-- <open-data type="userGender" lang="zh_CN" class="sx"></open-data> -->
+<view class='rc_rw'>日常任务</view>
+
+
+
+<view class='kf'>GO客服
+<image src='/image/kf.jpg' class='kf_icon'></image>
+<contact-button  class='tz' open-type="contact" size="20"session-from="weapp">
+</contact-button>
+ </view>
+<view class='email'>
+<view class='embox'>
+ <image class='logo_bg' src='/image/red.png'></image>
+ <image class='logo' src='/image/fx.png'></image>
+ <text class='wx'>微信号:fcyuans</text>
+  
+ </view>
+</view>
+
+
+</view>

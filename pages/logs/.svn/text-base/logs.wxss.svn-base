@@ -1,0 +1,126 @@
+::-webkit-scrollbar{
+  width: 0;
+  height: 0;
+  color: transparent;
+}
+page{
+  width: 100%;
+  height:100%;
+  background: #fff;
+  }
+.ad{
+  width: 750rpx;
+  height: 250rpx;
+}
+.ad_img{
+  width: 750rpx;
+  height: 250rpx;
+}
+.swiper-tab{
+  width: 96%; 
+  text-align: center; 
+  line-height: 80rpx;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+}
+.swiper-tab-list{
+  height: 70rpx;
+  font-size: 30rpx; 
+  display: inline-block; 
+  flex: 1;
+  color: #333333; 
+}
+.on{
+  color: #fba029; 
+  border-bottom: 2rpx solid #fba029;
+  font-weight: bold;
+}
+.swiper-box{ 
+display: block; 
+z-index: 1 ;
+width: 100%;
+background:#fff;
+height: 92%;
+position: fixed;
+top: 80rpx;
+overflow: hidden;
+
+ }
+.swiper-box view{ 
+  text-align: center; 
+}
+.tuijian{
+width: 96%;
+height: 100%;
+margin-left: auto;
+margin-right: auto;
+margin-top: -10rpx;
+overflow:scroll;
+}
+.tuijian_lis{
+  width: 100%;
+  height: 220rpx;
+  border-bottom: 2rpx solid #dddddd;
+  position: relative;
+}
+
+.tuijian_icon{
+  width: 140rpx;
+  height: 140rpx;
+  position: absolute;
+  top: 0;bottom: 0;
+  left: 16rpx;
+  margin-top: auto;
+  margin-bottom: auto;
+   border-radius: 15rpx;
+}
+.tuijian_name{
+  position: absolute;
+  top: 46rpx;
+  left: 180rpx;
+  font-size: 34rpx;
+  font-weight: bold;
+}
+.tuijian_txt{
+  width: 350rpx;
+  position: absolute;
+  top: 108rpx;left: 180rpx;
+  font-size: 28rpx;
+   overflow:hidden; 
+    text-overflow:ellipsis;
+    white-space:nowrap;  
+    text-align: left;
+}
+.tuijian_num{
+  position: absolute;
+  top: 148rpx;
+  left: 180rpx;
+  font-size: 28rpx;
+}
+.tuijian_num_num{
+  color: red
+}
+.star{
+  width: 177rpx;
+  height: 40rpx;
+  position: absolute;
+  top: 46rpx;
+  left: 390rpx;
+}
+.tuijian_btn{
+  width: 112rpx;
+  height: 60rpx;
+  position: absolute;
+  top: 60rpx;
+  right: 5rpx;
+  font-size: 24rpx;
+  color: #ffffff;
+  background: #ff9900;
+  line-height: 60rpx;
+  text-align: center;
+}
+.bao{
+  width: 100%;
+  
+}

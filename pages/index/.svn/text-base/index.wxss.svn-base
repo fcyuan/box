@@ -1,0 +1,346 @@
+::-webkit-scrollbar{
+  width: 0;
+  height: 0;
+  color: transparent;
+}
+page{
+  width: 100%;
+  height: 100%;
+  background:#fff;
+  overflow-x:hidden;
+}
+page>view{
+  width: 99%;
+ 
+}
+.wecome{
+  width: 94%;
+  font-size: 30rpx;
+  padding-left: 40rpx;
+  border-bottom: 1rpx solid silver;
+}
+.wename{
+  padding-left: 20rpx;
+  font-weight: bold;
+}
+.tianjia{
+  width:150rpx;
+  height: 38rpx;
+  position: absolute;
+  top:1rpx;right: 10rpx;
+  font-size: 26rpx;
+  border-radius:35rpx;
+  text-align: center;
+  color: #fba029;
+   box-shadow: 0px 1px 3px #595959;
+}
+.tianjiabox{
+  width: 600rpx;
+  height: 726rpx;
+  position: fixed;
+  top:140rpx;left: 0;right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  z-index: 99;
+}
+.tjimg{
+  width: 600rpx;height: 726rpx;
+}
+.tjx{
+  width: 120rpx;
+  height: 120rpx;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 9999;
+}
+.yxbox{
+  width: 92%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 15rpx;
+}
+.yx_1{
+  width: 99%;
+  height: 410rpx;
+  box-shadow: 1px 1px 5px #595959;
+  border: 0.01rpx solid #d0d0d0;
+  border-radius: 15rpx;
+  overflow: hidden
+}
+.youxi1_img{
+  width: 100%;
+  height: 303rpx;
+}
+.youxi1_icon{
+  width: 95rpx;
+  height: 95rpx;
+  position: absolute;
+  top: 310rpx;
+  left: 30rpx;
+ 
+}
+.youxi1_name{
+  font-size: 32rpx;
+  font-weight: bold;
+  position: absolute;
+  top: 310rpx;
+  left: 138rpx
+}
+.youxi1_txt{
+  color: #89888e;
+  font-size: 28rpx;
+  width: 280rpx;
+  height: 38rpx;
+  overflow: hidden;
+  position: absolute;
+  top: 360rpx;
+  left: 140rpx
+}
+.star{
+width: 177rpx;
+height: 39rpx;
+position: absolute;
+left: 470rpx;
+top: 345rpx;
+z-index: 99999
+}
+.new_game{
+  width: 100%;
+  margin-top: 40rpx;
+}
+.game_tuijian{
+  font-weight: bold;
+}
+.new_game_lis{
+  margin-top: 30rpx;
+  width: 96%;
+  height:100%;
+  display: flex;
+  flex-wrap: wrap;
+  border-bottom: 1rpx solid #ededed;
+  margin-left: auto;
+  margin-right: auto;
+}
+.game_li{
+  width: 25%;
+  height: 200rpx;
+  position: relative;
+}
+.game_li2{
+  width: 50%;
+  height: 160rpx;
+  position: relative;
+}
+.game_li_icon{
+  width: 88%;
+  height: 140rpx;
+  position: absolute;
+  top: 0;left: 0;right: 0;
+  margin-left: auto;
+  margin-right: auto;
+   border-radius: 15rpx;
+}
+.game_li_img{
+  width: 92%;
+  height: 190rpx;
+  position: absolute;
+  top: -61rpx;left: 0;right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 15rpx;
+}
+.game_name{
+  width: 100%;
+  height: 40rpx;
+position: absolute;
+top: 144rpx;
+left: 0;right: 0;
+margin-left: auto;
+margin-right: auto;
+font-size: 28rpx;
+text-align: center;
+font-weight: bold;
+color: #333;
+overflow: hidden
+}
+.game_txt{
+  position: absolute;
+  width: 96%;
+  height: 28rpx;
+  overflow: hidden;
+  top: 186rpx;
+  left: 0;right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  font-size: 20rpx;
+  color: #6e7889;
+}
+.game_lis2{
+  display: flex;
+  height: 240rpx;
+  margin-top: 12rpx;
+  margin-bottom: 20rpx;
+}
+.game_lis2_childimg{
+ 
+  width: 330rpx;
+  height: 210rpx;
+  position: absolute;
+  top: 0;left: 0;right: 0;bottom: 0;
+  margin: auto;
+   border-radius: 20rpx;
+}
+.game_lis2_child{
+ flex: 1;
+ position: relative;
+ border-bottom: 1rpx solid #ededed;
+}
+.game_tuijian2{
+  margin-top: 10rpx;
+ position: relative;
+}
+.tj_title{
+font-weight: bold;
+ font-size: 34rpx;
+ margin-left: 80rpx;
+ color: #fba029
+}
+.tj_imgs{
+  width: 60rpx;
+  height: 60rpx;
+  position: absolute;
+  top: -4rpx;left: 0
+}
+.guanggao{
+  width: 100%;
+  height: 200rpx;
+}
+navigator{
+  z-index: 9999999;
+}
+
+.swbox{
+  width: 100%;
+  height: 458rpx;
+  
+}
+
+.fx{
+  width: 100rpx;
+  height: 120rpx;
+  position: fixed;
+  bottom: 200rpx;
+  right:20rpx;
+  z-index: 99999999;
+  background: none;
+  border: none;  
+
+}
+ 
+.fxs{
+  width: 80rpx;
+  height: 120rpx;
+  position: absolute;
+  top: 0;left: 0;
+  background: transparent
+}
+.fxs>image{
+  width: 100rpx;
+  height:100rpx;
+}
+.fxtxt{
+  position: absolute;
+  bottom: 0rpx;
+  left: 0;right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  color:#213341;
+  font-size: 24rpx;
+  text-align: center;
+}
+.fx::after{
+  border:none;
+}
+
+/* 以下猜拳游戏 */
+
+/*底*/
+.downView{
+    width: 100%;
+    height: 1250rpx;
+    background: #FAE738;
+    margin: 0rpx;
+    text-align: center;
+}
+
+/*获胜次数*/
+.winNum{
+    padding-top: 40rpx;
+    display: block;
+    font-size: 30rpx;  
+    color: #363527;
+    font-weight:500;
+}
+
+/*展示出拳结果*/
+.showView{
+    display: flex;  
+    width: 100%;
+    margin-top:30rpx;
+    height: 200rpx;
+}
+
+.gesturesImgL{
+    height: 180rpx;
+    width: 180rpx;
+    margin-left:80rpx;
+}
+
+.gesturesImgR{
+    height: 180rpx;
+    width: 180rpx;
+    margin-right:80rpx;
+}
+
+.winOrLost{
+    color: orangered; 
+    flex:1;
+    font-size: 30rpx;
+    margin-top:75rpx; 
+}
+
+
+/*用户出拳*/
+.chooseForUserView{
+    margin:40rpx; 
+    height: 800rpx;
+    background: white;
+    text-align: center;
+}
+
+.choose-V{
+    display: flex;
+    margin-top: 40rpx;
+}
+
+.choose-view{  
+    flex: 1;
+    content:none !important;
+    height: 140rpx;
+    width: 140rpx; 
+    border:1px solid white;
+}  
+
+.choose-image{
+    height: 160rpx;
+    width: 160rpx;
+    border-radius:80rpx;
+}
+
+/*再来*/
+.againBtn{
+    margin:80rpx; 
+    background: #FAE738;
+}

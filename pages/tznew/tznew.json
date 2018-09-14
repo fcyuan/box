@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "进入游戏",
+  "usingComponents": {
+    "xm-ad": "/components/xmAD/xmAD"
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "pages": [
+   
+    "pages/index/index",
+    "pages/wode/wode",
+    "pages/logs/logs",
+    "pages/tzy/tzy",
+    "pages/tznew/tznew"
+    
+    
+  ],
+  "window": {
+    "enablePullDownRefresh": false,
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#ffffff",
+    "navigationBarTitleText": "游戏中心",
+    "navigationBarTextStyle": "black",
+    "onReachBottomDistance": 0
+  },
+  "tabBar": {
+    "color": "#707070",
+    "selectedColor": "#2c2c2c",
+    "borderStyle": "black",
+    "backgroundColor": "#fff",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "玩游戏",
+        "iconPath": "image/playgame.png",
+        "selectedIconPath": "image/playgames.png"
+      },
+      {
+        "pagePath": "pages/logs/logs",
+        "text": "发现",
+        "iconPath": "image/faxian.png",
+        "selectedIconPath": "image/faxians.png"
+      },
+      {
+        "pagePath": "pages/wode/wode",
+        "text": "我的",
+        "iconPath": "image/wode.png",
+        "selectedIconPath": "image/wodes.png"
+      }
+    ]
+  }
+}

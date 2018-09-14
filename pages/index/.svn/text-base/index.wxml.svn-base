@@ -1,0 +1,122 @@
+<block wx:for="{{ds}}" wx:key="xxx">
+  <view wx:if="{{item.type=='box'}}">
+    <view class="wecome">欢迎:
+      <open-data type="userNickName" class="wename"></open-data> !</view>
+    <view class='tianjia' bindtap="tianjia" animation="{{animationData}}">添加到桌面</view>
+    <view class='tianjiabox' hidden='{{tj}}'>
+      <!--弹框-->
+      <image src='/image/tianjia.png' class='tjimg'> </image>
+      <view class='tjx' bindtap='tjx'></view>
+    </view>
+
+    <view class='yxbox'>
+
+      <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" duration="{{duration}}" previous-margin="{{previousMargin}}px" next-margin="{{nextMargin}}px" class='swbox'>
+        <block wx:for="{{rec}}" wx:key="xxx">
+          <swiper-item>
+
+            <navigator target="miniProgram" app-id="{{item.wxid}}" path=" " open-type='navigate'>
+              <view class='yx_1' wx:if="{{item.qr}}" data-url="{{item.qr}}" catchtap="qrclick" data-wxid="{{item.wxid}}" data-curl='{{item.curl}}' data-twxid='{{item.twxid}}' data-name='{{item.name}}'>
+                <image src='{{item.img}}' class='youxi1_img' mode='aspectFill'></image>
+
+                <image src='{{item.icon}}' class='youxi1_icon'></image>
+                <text class='youxi1_name'>{{item.name}} </text>
+                <text class='youxi1_txt'>{{item.desc}}</text>
+                <image src='/image/star.png' class='star'></image>
+              </view>
+              <view class='yx_1' wx:if="{{item.qr==null||item.qr==''}}" data-wxid="{{item.wxid}}" data-curl='{{item.curl}}' data-twxid='{{item.twxid}}' data-name='{{item.name}}' bindtap='yx_1'>
+                <image src='{{item.img}}' class='youxi1_img' mode='aspectFill'></image>
+
+                <image src='{{item.icon}}' class='youxi1_icon'></image>
+                <text class='youxi1_name'>{{item.name}} </text>
+                <text class='youxi1_txt'>{{item.desc}}</text>
+                <image src='/image/star.png' class='star'></image>
+              </view>
+            </navigator>
+
+          </swiper-item>
+        </block>
+
+      </swiper>
+
+
+
+      <view class='game_tuijian2' wx:for="{{clist}}" wx:key="xxx">
+        <image src='{{item.img}}' class='tj_imgs'></image>
+        <text class='tj_title'>{{item.title}}</text>
+        <view class='new_game_lis'>
+          <block wx:if="{{item.type=='ICON'}}">
+            <view class='game_li' wx:for="{{item.list}}" wx:key="xxx">
+              <navigator target="miniProgram" app-id="{{item.wxid}}" path="{{item.path}}" open-type='navigate'>
+                <image wx:if="{{item.qr}}" src='{{item.img}}' class='game_li_icon' data-url="{{item.qr}}" catchtap="qrsclick" data-wxid="{{item.wxid}}" data-curl='{{item.curl}}' data-twxid='{{item.twxid}}' data-name='{{item.name}}'></image>
+                <image wx:if="{{item.qr==null ||item.qr==''}}" src='{{item.img}}' class='game_li_icon' data-wxid="{{item.wxid}}" data-curl='{{item.curl}}' data-twxid='{{item.twxid}}' data-name='{{item.name}}' bindtap='yx_1'></image>
+                <text class='game_name'>{{item.name}}</text>
+                <!-- <text class='game_txt'>{{item.desc}} </text> -->
+              </navigator>
+            </view>
+          </block>
+          <block wx:if="{{item.type=='IMG'}}">
+            <view class='game_li2' wx:for="{{item.list}}" wx:key="xxx">
+              <navigator target="miniProgram" app-id="{{item.wxid}}" path="{{item.path}}" open-type='navigate'>
+                <image wx:if="{{item.qr}}" src='{{item.img}}' class='game_li_img' data-url="{{item.qr}}" catchtap="qrsclick" mode='withFill' data-wxid="{{item.wxid}}" data-curl='{{item.curl}}' data-twxid='{{item.twxid}}' data-name='{{item.name}}'></image>
+                <image wx:if="{{item.qr==null ||item.qr==''}}" src='{{item.img}}' class='game_li_img' mode='withFill' data-wxid="{{item.wxid}}" data-curl='{{item.curl}}' data-twxid='{{item.twxid}}' data-name='{{item.name}}' bindtap='yx_1'></image>
+                <!-- <text class='game_name'>{{item.name}}</text>
+              <text class='game_txt'>{{item.desc}} </text> -->
+              </navigator>
+            </view>
+          </block>
+        </view>
+      </view>
+    </view>
+    <button class='fx' hover-class="none" open-type="share" animation="{{animations}}">
+      <view class='fxs'>
+        <image src='/image/fx3.png'></image>
+        <!-- <view class='fxtxt'>分享</view> -->
+      </view>
+    </button>
+  </view>
+
+  <!-- 以下猜拳游戏 -->
+  <view wx:if="{{item.type=='game'}}">
+    <view class="downView">
+
+      <text class="winNum">你已获胜了 <text style="color:red">{{winNum}}</text> 局 </text>
+      <view class="showView">
+        <image src="{{imageAiScr}}" class="gesturesImgL"></image>
+        <text class="winOrLost">{{gameOfPlay}}</text>
+        <image src="{{imageUserScr}}" class="gesturesImgR"></image>
+      </view>
+
+
+
+      <view class="chooseForUserView">
+        <text class="winNum">出拳吧，少年~</text>
+        <view class="choose-V">
+          <block wx:for="{{srcs}}">
+            <view class="choose-view" bindtap="changeForChoose" id="{{index}}">
+              <image class="choose-image" src="{{item}}"></image>
+            </view>
+          </block>
+        </view>
+
+        <button class="againBtn" bindtap="again">再来一局</button>
+        <!-- 插屏广告,按需引入 -->
+        <view class="xm_insert">
+          <xm-ad class="xm_component" data-id="{{xmad.ad.insert}}" bindclick='appoIntView' bindclose='xmadClose' adData="{{xmad.adData}}"> </xm-ad>
+        </view>
+
+        <!-- banner广告,按需引入 -->
+        <view class="xm_banner">
+          <xm-ad class="xm_component" data-id="{{xmad.ad.banner}}" bindclick='appoIntView' bindclose='xmadClose' adData="{{xmad.adData}}"> </xm-ad>
+        </view>
+
+      </view>
+
+      <!-- 悬浮窗广告,按需引入 -->
+      <view class="xm_fixed">
+        <xm-ad class="xm_component" data-id="{{xmad.ad.fixed}}" bindclick='appoIntView' bindclose='xmadClose' adData="{{xmad.adData}}"> </xm-ad>
+      </view>
+
+    </view>
+  </view>
+</block>

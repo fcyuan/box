@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "游戏中心",
+  "usingComponents": {
+    "xm-ad": "/components/xmAD/xmAD"
+  }
+}
